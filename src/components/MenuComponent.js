@@ -9,7 +9,7 @@ class Menu extends Component{
 
             this.state={
                 selectedDish:null
-            }
+            };
         }
 
         onDishSelect(dish){
@@ -17,7 +17,7 @@ class Menu extends Component{
         }
 
         renderDish(dish){
-            if(dish!=null){
+            if(dish!=null)
                 return(
                     <Card>
                         <CardImg width="100%" src={dish.image} alt={dish.name}/>
@@ -27,12 +27,10 @@ class Menu extends Component{
                         </CardBody>
                     </Card>
                 )    
-            }
-            else{
+            else
                 return(
                     <div></div>
                 )
-            }
         }
 
         render(){
